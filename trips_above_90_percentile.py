@@ -10,7 +10,7 @@ df = trips.to_pandas()
 #filtrar a coluna trip distance e usar a funcao quantile por se tratar de um float
 percentile_90 = df['trip_distance'].quantile(0.9)
 
-#filtrar a coluna trip distance e filtrar tudo acima de 0.9
+#filtrar a coluna trip distance e filtrar tudo acima de 0.9.
 trips_above_90_percentile = df[df['trip_distance'] > percentile_90]
 
 print(trips_above_90_percentile)
