@@ -14,5 +14,3 @@ percentile_90 = df['trip_distance'].quantile(0.9)
 trips_above_90_percentile = df[df['trip_distance'] > percentile_90]
 
 print(trips_above_90_percentile)
-
-#teste
